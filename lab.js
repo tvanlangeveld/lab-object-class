@@ -453,9 +453,15 @@ const shippingInfo = {
 
 //Code Here
 
+let helensInfo = {
+  ...contactInfo,
+  ...shippingInfo
+}
+
 
 //Print helensInfo to see what it looks like, there should be no repeating properties.
 
+console.log(helensInfo)
 
 //////////////////////////// PROBLEM 16 ////////////////////////////
 
@@ -471,6 +477,19 @@ const shippingInfo = {
 
 //Code Here 
 
+class Vehicle{
+  constructor(capacity, color, mileage){
+    this.capacity = capacity;
+    this.color = color;
+    this.mileage = mileage;
+  } move(miles){
+    this.mileage += miles;
+    console.log(this.mileage)
+  }
+}
+
+
+
 
 /*
   Create a vehicle using your new class and save it to a variable called myFirstVehicle
@@ -478,7 +497,10 @@ const shippingInfo = {
 
 //Code Here
 
+let myFirstVehicle = new Vehicle(6,'black', 99234)
 
+// myFirstVehicle.move(40000)
+//  console.log(myFirstVehicle)
 /* 
   Now we'll create a class that's based off of the vehicle class. 
 
@@ -488,6 +510,8 @@ const shippingInfo = {
 */
 
 //Code Here
+ class Motorcycle 
+
 
 /*
   Create a Motorcycle using your new class and save it to a variable called myFirstMotorcycle
